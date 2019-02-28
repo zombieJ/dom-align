@@ -1,32 +1,32 @@
 webpackJsonp([0],{
 
-/***/ 202:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(92);
+module.exports = __webpack_require__(93);
 
 
 /***/ }),
 
-/***/ 33:
+/***/ 21:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src___ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src___ = __webpack_require__(26);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__src___["a" /* default */]);
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_dom_align__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_dom_align__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
 
 
@@ -52,7 +52,9 @@ function align() {
     },
     useCssRight: $id('useCssRight').checked,
     useCssBottom: $id('useCssBottom').checked,
-    useCssTransform: $id('useCssTransform').checked
+    useCssTransform: $id('useCssTransform').checked,
+
+    ignoreShake: $id('ignoreShake').checked
   });
 }
 
@@ -190,6 +192,13 @@ var div = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     ),
     '\xA0',
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'label',
+      null,
+      'ignoreShake:',
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', id: 'ignoreShake' })
+    ),
+    '\xA0',
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'button',
       { id: 'align', onClick: align },
       'align'
@@ -225,16 +234,23 @@ var div = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         {
           style: {
             background: 'red',
-            width: 50,
-            height: 50,
+            width: 80,
+            height: 80,
             left: 0,
             top: 0,
             position: 'absolute',
-            transition: 'all 0.5s'
+            transition: 'all 0.5s',
+            overflowY: 'auto'
           },
           id: 'source'
         },
-        'source node'
+        'source node',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null)
       )
     )
   )
@@ -244,5 +260,5 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(div, $id('__react-conte
 
 /***/ })
 
-},[202]);
+},[207]);
 //# sourceMappingURL=simple.js.map
